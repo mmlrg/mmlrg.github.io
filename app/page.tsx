@@ -11,7 +11,6 @@ export default function Home() {
   const postPreviews = postMetadata.map((post) => (
     <div>
       <Link href={`/blog/${post.slug}`}>
-         <Image src={post.cover} width={300} height={300} alt={"Article cover"} />
           <p className="text-blue-500 text-lg">{post.title}</p>
           <p className="text-slate-500 text-sm">{post.date}</p>
       </Link>
