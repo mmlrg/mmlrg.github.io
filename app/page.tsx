@@ -1,13 +1,11 @@
-'use client'
 import Image from 'next/image'
-import { useEffect, useRef, useState } from "react"
-import { useRandomReveal } from 'react-random-reveal'
 import Link from 'next/link';
 import {Button} from "@nextui-org/react"
 import { RiTeamLine } from "react-icons/ri";
 import { HiOutlineInformationCircle } from "react-icons/hi";
 import { RiMailLine } from "react-icons/ri";
 import { RiDiscordFill } from "react-icons/ri";
+import { RiArticleLine } from "react-icons/ri";
 
 
 
@@ -27,7 +25,7 @@ export default function Home() {
         
           <Link href="https://discord.gg/cgWxx94WTg" rel="noopener noreferrer" target="_blank">
           <Button color="primary" variant="shadow" className="flex items-center">
-            <RiDiscordFill className="text-2xl" /> 
+            <RiDiscordFill className="text-3xl" /> 
             <h5 className="text-bold">Join our Discord</h5>
           </Button>
 </Link>
@@ -69,8 +67,13 @@ export default function Home() {
                 <p className="col-span-1">Anthony</p>
                 <p className="col-span-1">Santosh</p>
               </div>
+            </div>
 
-
+            <div className='mt-10 mb-5'>
+            <h2 className="flex font-bold text-3xl">
+              <RiArticleLine className="mr-2 text-blue-500"/>
+              Blog
+            </h2> 
             </div>
 
             <div className='mt-10 mb-5'>
@@ -78,12 +81,12 @@ export default function Home() {
               <RiMailLine className="mr-2 text-orange-500"/>
               Contact
             </h2> 
-            <p className="text-lg mt-4">
-            We&apos;re a small, bootstrapped, student-run organization. 
-            If you&apos;d like to get involved, please &#8239;
-            <Link href="https://discord.gg/cgWxx94WTg" target="_blank" className='text-blue-500 underline'>join our Discord</Link> and stay tuned for updates.
-            </p>
-          </div>
+              <p className="text-lg mt-4">
+              We&apos;re a small, bootstrapped, student-run organization. 
+              If you&apos;d like to get involved, please &#8239;
+              <Link href="https://discord.gg/cgWxx94WTg" target="_blank" className='text-blue-500 underline'>join our Discord</Link> and stay tuned for updates.
+              </p>
+            </div>
             
           </div>
         </div>
