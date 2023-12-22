@@ -79,8 +79,8 @@ export default function Home() {
               Contact
             </h2> 
             <p className="text-lg mt-4">
-            We're a small, bootstrapped, student-run organization. 
-            If you'd like to get involved, please &#8239;
+            We&apos;re a small, bootstrapped, student-run organization. 
+            If you&apos;d like to get involved, please &#8239;
             <Link href="https://discord.gg/cgWxx94WTg" target="_blank" className='text-blue-500 underline'>join our Discord</Link> and stay tuned for updates.
             </p>
           </div>
