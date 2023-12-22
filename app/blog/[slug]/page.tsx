@@ -31,15 +31,22 @@ const PostPage = (props: any) => {
     const post = getPostContent(slug);
     return (
     <main className="flex min-h-screen flex-col">
-    
-        <Link href="/blog">
-                <p className="flex items-center p-5"> 
-                    <IoIosArrowRoundBack className="mr-0.5 text-2xl"/>
-                    <span>Back to Blog</span>
-                </p>
-        </Link>
 
-        <div className="flex flex-col items-center"> 
+<div className='flex flex-col items-center justify-center w-full text-center'>
+
+<div className='flex row justify-between pt-4 pb-4 w-3/4 lg:w-1/2 xl:w-1/2 2xl:w-1/2'>
+<Link href="/blog">
+    <p className="flex items-center text-xl hover:underline">McGill Machine Learning Reading Group</p>
+</Link>
+
+<Link href="/">
+    <p className="flex items-center text-lg hover:underline">About</p>
+</Link>
+</div>
+
+<hr className="w-full"/>
+</div>
+        <div className="flex flex-col items-center mt-10"> 
             <div className="w-3/4 lg:w-1/2 xl:w-1/2 2xl:w-1/2">
             <h1 className="text-4xl font-bold">{post.data.title}</h1>
             <p className="text-slate-500">{post.data.date}</p>

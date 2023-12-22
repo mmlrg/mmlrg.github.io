@@ -8,10 +8,10 @@ import getPostMetadata from "../components/getPostMetadata"
 
 export default function Home() {
   const postMetadata = getPostMetadata();
-  const postPreviews = postMetadata.map((post) => (
-    <div key={post.slug}> {/* Added a key prop here */}
+  const postPreviews = postMetadata.slice(0, 3).map((post) => (
+    <div key={post.slug}>
       <Link href={`/blog/${post.slug}`}>
-          <p className="text-blue-500 text-lg">{post.title}</p>
+          <p className="text-blue-500 text-lg mb-1">{post.title}</p>
           <p className="text-slate-500 text-sm">{post.date}</p>
       </Link>
     </div>
@@ -84,10 +84,10 @@ export default function Home() {
             </h2> 
 
             <Link href="/blog">
-              <p className="flex items-center underline text-lg"> 
-                <span>View all posts</span>
+              <div className="flex items-center underline text-lg"> 
+                <p>View all posts</p>
                 <IoIosArrowRoundForward className="ml-1 text-2xl"/>
-              </p>
+              </div>
             </Link>
 
             </div>

@@ -2,11 +2,10 @@
 title: "Hello, World!"
 subtitle: "First post (ever)"
 date: "December 22, 2023"
-cover: "/images/hello-world.png"
 ---
 
-<div align="center">
-  <img src="/images/hello-world.png" alt="Hello World"/>
+<div align="center" style="width: 100%;">
+  <img src="/images/hello-world.png" alt="Hello World" style="width: 100%; height: auto;"/>
 </div>
 
 
