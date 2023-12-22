@@ -1,17 +1,23 @@
 import Image from 'next/image'
 import Link from 'next/link';
 import {Button} from "@nextui-org/react"
-import { RiTeamLine } from "react-icons/ri";
 import { HiOutlineInformationCircle } from "react-icons/hi";
-import { RiMailLine } from "react-icons/ri";
-import { RiDiscordFill } from "react-icons/ri";
-import { RiArticleLine } from "react-icons/ri";
-
-
-
-
+import { RiDiscordFill, RiBookOpenLine, RiMailLine, RiTeamLine } from "react-icons/ri";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import getPostMetadata from "../components/getPostMetadata"
 
 export default function Home() {
+  const postMetadata = getPostMetadata();
+  const postPreviews = postMetadata.map((post) => (
+    <div>
+      <Link href={`/blog/${post.slug}`}>
+         <Image src={post.cover} width={300} height={300} alt={"Article cover"} />
+          <p className="text-blue-500 text-lg">{post.title}</p>
+          <p className="text-slate-500 text-sm">{post.date}</p>
+      </Link>
+    </div>
+  ));
+
   return (
     <main className="flex min-h-screen flex-col">
 
@@ -24,24 +30,24 @@ export default function Home() {
           </p>
         
           <Link href="https://discord.gg/cgWxx94WTg" rel="noopener noreferrer" target="_blank">
-          <Button color="primary" variant="shadow" className="flex items-center">
-            <RiDiscordFill className="text-3xl" /> 
-            <h5 className="text-bold">Join our Discord</h5>
-          </Button>
-</Link>
+            <Button color="primary" variant="shadow" className="flex items-center">
+              <RiDiscordFill className="text-3xl" /> 
+              <h5 className="text-bold">Join our Discord</h5>
+            </Button>
+          </Link>
 
       </div>
 
         <div className='flex flex-col items-center mt-5 mb-5'>
 
-          <div className='flex flex-col items-left justify-left w-1/2'>
+          <div className='flex flex-col items-left justify-left w-3/4 lg:w-1/2 xl:w-1/2 2xl:w-1/2'>
 
           <div className='mt-10 mb-5'>
-            <h2 className="flex font-bold text-3xl">
+            <h2 className="flex font-bold text-3xl mb-4">
               <HiOutlineInformationCircle className="mr-2 text-green-500"/>
               About
             </h2> 
-            <p className="text-lg mt-4">
+            <p className="text-lg">
               The McGill Machine Learning Reading Group is a student-run reading group for machine learning at McGill University. 
             </p>
             <p className="text-lg mt-2">
@@ -51,11 +57,11 @@ export default function Home() {
           </div>
 
             <div className='mt-10 mb-5'>
-              <h2 className="flex font-bold text-3xl">
+              <h2 className="flex font-bold text-3xl mb-4">
                 <RiTeamLine className="mr-2 text-violet-500"/>
                 Team
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 text-lg mt-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 text-lg">
                 <p className="col-span-1">Tommy</p>
                 <p className="col-span-1">Elian</p>
                 <p className="col-span-1">Edmund</p>
@@ -70,18 +76,35 @@ export default function Home() {
             </div>
 
             <div className='mt-10 mb-5'>
+            
+            <div className='flex items-start justify-between mb-4'> 
+
             <h2 className="flex font-bold text-3xl">
-              <RiArticleLine className="mr-2 text-blue-500"/>
-              Blog
+              <RiBookOpenLine className="mr-2 text-blue-500"/>
+              Latest Posts
             </h2> 
+
+            <Link href="/blog">
+              <p className="flex items-center underline text-lg"> 
+                <span>View all posts</span>
+                <IoIosArrowRoundForward className="ml-1 text-2xl"/>
+              </p>
+            </Link>
+
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 text-lg">
+              {postPreviews}
+            </div>
+
             </div>
 
             <div className='mt-10 mb-5'>
-            <h2 className="flex font-bold text-3xl">
+            <h2 className="flex font-bold text-3xl mb-4">
               <RiMailLine className="mr-2 text-orange-500"/>
               Contact
             </h2> 
-              <p className="text-lg mt-4">
+              <p className="text-lg">
               We&apos;re a small, bootstrapped, student-run organization. 
               If you&apos;d like to get involved, please &#8239;
               <Link href="https://discord.gg/cgWxx94WTg" target="_blank" className='text-blue-500 underline'>join our Discord</Link> and stay tuned for updates.
