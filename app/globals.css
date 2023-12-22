@@ -2,18 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'Alliance no 2';
+  src: url('assets/fonts/alliance_2.otf') format('opentype');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: 'Alliance no 2 Semibold';
+  src: url('assets/fonts/alliance_2_semibold.otf') format('opentype');
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
 }
 
 body {
@@ -24,4 +25,14 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alliance no 2 Semibold', sans-serif;
+} 
+
+
+p{ 
+  font-family: 'Alliance no 2', sans-serif;
+  font-weight: 500;
 }
