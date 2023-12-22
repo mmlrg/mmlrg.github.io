@@ -9,13 +9,13 @@ import getPostMetadata from "../../components/getPostMetadata"
 function Blog() {
     const postMetadata = getPostMetadata();
     const postPreviews = postMetadata.map((post) => (
-      <div>
-        <Link href={`/blog/${post.slug}`}>
-            <p className="text-blue-500 text-lg">{post.title}</p>
-            <p className="text-slate-500 text-sm">{post.date}</p>
-        </Link>
-      </div>
-    ));
+        <div key={post.slug}> 
+          <Link href={`/blog/${post.slug}`}>
+              <p className="text-blue-500 text-lg">{post.title}</p>
+              <p className="text-slate-500 text-sm">{post.date}</p>
+          </Link>
+        </div>
+      ));      
 
     return (
       <main className="flex min-h-screen flex-col">
