@@ -21,10 +21,10 @@ export default function Home() {
     <main className="flex min-h-screen flex-col">
 
       <div className='flex flex-col items-center justify-center w-full h-screen bg-stone-900 text-center'>
-          <h1 className="font-bold text-white text-5xl">
+          <h1 className="font-bold text-white text-5xl px-3 sm:px-10 md:px-5">
             McGill Machine Learning Reading Group
           </h1>
-          <p className="text-lg text-white m-5">
+          <p className="text-lg text-white m-5 px-3 sm:px-10 md:px-5">
             Weekly meetings to discuss recent research papers in machine learning.
           </p>
         
@@ -64,12 +64,14 @@ export default function Home() {
                 <p className="col-span-1">Tommy</p>
                 <p className="col-span-1">Elian</p>
                 <p className="col-span-1">Edmund</p>
+                <p className="col-span-1">Anton</p>
                 <p className="col-span-1">Elliot</p>
                 <p className="col-span-1">Roko</p>
                 <p className="col-span-1">Gabrielle</p>
                 <p className="col-span-1">Tianyi</p>
                 <p className="col-span-1">Louis</p>
                 <p className="col-span-1">Anthony</p>
+                <p className="col-span-1">Henri</p>
                 <p className="col-span-1">Santosh</p>
               </div>
             </div>
