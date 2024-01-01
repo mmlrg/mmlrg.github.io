@@ -14,7 +14,7 @@ function Blog() {
       ));      
 
     return (
-      <main className="flex min-h-screen flex-col">
+      <main className="flex min-h-screen flex-col bg-white">
 
         <div className='flex flex-col items-center justify-center w-full text-center'>
 

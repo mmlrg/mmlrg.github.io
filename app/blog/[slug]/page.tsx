@@ -30,7 +30,7 @@ const PostPage = (props: any) => {
     const slug = props.params.slug;
     const post = getPostContent(slug);
     return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex min-h-screen flex-col bg-white">
 
 <div className='flex flex-col items-center justify-center w-full text-center'>
 
