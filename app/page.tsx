@@ -70,14 +70,15 @@ export default function Home() {
               <p className="col-span-1">Tommy</p>
               <p className="col-span-1">Elian</p>
               <p className="col-span-1">Edmund</p>
-              <p className="col-span-1">Anton</p>
               <p className="col-span-1">Elliot</p>
               <p className="col-span-1">Roko</p>
               <p className="col-span-1">Gabrielle</p>
+              <p className="col-span-1">Anton</p>
               <p className="col-span-1">Tianyi</p>
+              <p className="col-span-1">Shiyan</p>
+              <p className="col-span-1">Moeez</p>
               <p className="col-span-1">Louis</p>
               <p className="col-span-1">Anthony</p>
-              <p className="col-span-1">Henri</p>
               <p className="col-span-1">Santosh</p>
             </div>
           </div>
