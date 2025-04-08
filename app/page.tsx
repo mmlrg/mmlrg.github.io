@@ -80,6 +80,9 @@ export default function Home() {
               <p className="col-span-1">Louis</p>
               <p className="col-span-1">Anthony</p>
               <p className="col-span-1">Santosh</p>
+			  <p className="col-span-1">Vincent</p>
+			  <p className="col-span-1">Jade</p>
+			  <p className="col-span-1">Laurence</p>
             </div>
           </div>
 
