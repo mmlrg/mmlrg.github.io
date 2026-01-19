@@ -1,0 +1,122 @@
+[
+	{
+		"title": "World Models",
+		"presenter": "Dani",
+		"affiliation": "Université de Montréal",
+		"date": "2025-11-17"
+	},
+	{
+		"title": "Tiny Recursive Model",
+		"presenter": "Dani",
+		"affiliation": "Université de Montréal",
+		"date": "2025-11-10"
+	},
+	{
+		"title": "Workshop on LLM Alignment",
+		"presenter": "Dani",
+		"affiliation": "Université de Montréal",
+		"date": "2025-11-03"
+	},
+	{
+		"title": "Z1: Efficient Test-time Scaling with Code",
+		"presenter": "Laurence Liang",
+		"affiliation": "McGill University",
+		"date": "2025-10-27"
+	},
+	{
+		"title": "Diffusion and Flow Matching",
+		"presenter": "Mark Chiu",
+		"affiliation": "University of Waterloo",
+		"date": "2025-10-20"
+	},
+	{
+		"title": "Affective Social Robots, Emotions and Gamification",
+		"presenter": "Professor Hatice Kose",
+		"affiliation": "Istanbul Technical University",
+		"date": "2025-10-06"
+	},
+	{
+		"title": "Simultaneous Localization and Mapping (SLAM)",
+		"presenter": "Dani",
+		"affiliation": "Université de Montréal",
+		"date": "2025-09-28"
+	},
+	{
+		"title": "SciGym: Measuring Scientific Capabilities of Language Models with a Systems Biology Dry Lab",
+		"presenter": "Stephen Lu",
+		"affiliation": "UC Berkeley",
+		"date": "2025-09-24"
+	},
+	{
+		"title": "A Neuromotor Interface for Human Computer Interatction",
+		"presenter": "Antonio", 
+		"affiliation": "McGill University",
+		"date": "2025-09-22"
+	},
+	{
+		"title": "Transformers",
+		"presenter": "Dani",
+		"affiliation": "Université de Montréal",
+		"date": "2025-09-15"
+	},
+	{
+		"title": "Large Language Diffusion Models",
+		"presenter": "Laurence Liang",
+		"affiliation": "McGill University",
+		"date": "2025-04-10"
+	},
+	{
+		"title": "CNNs to Analyze Chest X-Rays",
+		"presenter": "Antonio",
+		"affiliation": "McGill University",
+		"date": "2025-03-18"
+	},
+	{
+		"title": "Healthcare and RAG",
+		"presenter": "Dani & Victor",
+		"affiliation": "Université de Montréal & McGill University",
+		"date": "2025-03-11"
+	},
+	{
+		"title": "MedRAX: Medical Reasoning Agent for Chest X-Ray",
+		"presenter": "Adibvafa Fallahpour",
+		"affiliation": "University of Toronto",
+		"date": "2025-02-25"
+	},
+	{
+		"title": "Codon Transformer",
+		"presenter": "Adibvafa Fallahpour",
+		"affiliation": "University of Toronto",
+		"date": "2025-02-25"
+	},
+	{
+		"title": "Backpropagation",
+		"presenter": "Dani",
+		"affiliation": "Université de Montréal",
+		"date": "2025-02-18"
+	},
+	{
+		"title": "Convolutional Networks for Images, Speech and Time-Series (1997)",
+		"presenter": "Dani & Victor",
+		"affiliation": "Université de Montréal & McGill University",
+		"date": "2025-02-11"
+	},
+	{
+		"title": "Grover's Search Algorithm",
+		"presenter": "Vincent Candela",
+		"affiliation": "McGill University",
+		"date": "2025-02-04"
+	},
+	{
+		"title": "DeepSeek R1",
+		"presenter": "Vincent Candela",
+		"affiliation": "McGill University",
+		"date": "2025-01-28"
+	},
+	{
+		"title": "Titans: Learning to Memorize at Test-Time",
+		"presenter": "Vincent Candela",
+		"affiliation": "McGill University",
+		"date": "2025-01-21"
+	}
+]

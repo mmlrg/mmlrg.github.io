@@ -2,9 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link';
 import {Button} from "@nextui-org/react"
 import { HiOutlineInformationCircle } from "react-icons/hi";
-import { RiDiscordFill, RiBookOpenLine, RiMailLine, RiTeamLine } from "react-icons/ri";
+import { RiDiscordFill, RiBookOpenLine, RiMailLine, RiTeamLine, RiPresentationLine } from "react-icons/ri";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import getPostMetadata from "../components/getPostMetadata"
+import getPresentations from "../components/getPresentations"
 
 export default function Home() {
   const postMetadata = getPostMetadata();
@@ -14,6 +15,16 @@ export default function Home() {
           <p className="text-blue-500 text-lg mb-1">{post.title}</p>
           <p className="text-slate-500 text-sm">{post.date}</p>
       </Link>
+    </div>
+  ));
+
+  const presentations = getPresentations();
+  const presentationPreviews = presentations.slice(0, 6).map((pres, index) => (
+    <div key={index}>
+      <p className="text-purple-500 text-lg mb-1 font-semibold">{pres.title}</p>
+      <p className="text-slate-600 text-sm">{pres.presenter}</p>
+      <p className="text-slate-500 text-xs">{pres.affiliation}</p>
+      <p className="text-slate-400 text-xs mt-1">{pres.date}</p>
     </div>
   ));  
 
@@ -62,6 +73,29 @@ export default function Home() {
         </div>
 
           <div className='mt-10 mb-5'>
+
+          <div className='flex items-start justify-between mb-4'>
+
+          <h2 className="flex font-bold text-3xl">
+            <RiPresentationLine className="mr-2 text-purple-500"/>
+            Recent Presentations
+          </h2>
+
+          <Link href="/presentations">
+            <div className="flex items-center underline text-lg">
+              <p>View all presentations</p>
+              <IoIosArrowRoundForward className="ml-1 text-2xl"/>
+            </div>
+          </Link>
+
+          </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-lg">
+              {presentationPreviews}
+            </div>
+          </div>
+
+          <div className='mt-10 mb-5'>
             <h2 className="flex font-bold text-3xl mb-4">
               <RiTeamLine className="mr-2 text-violet-500"/>
               Team
@@ -83,6 +117,7 @@ export default function Home() {
 			  <p className="col-span-1">Vincent</p>
 			  <p className="col-span-1">Jade</p>
 			  <p className="col-span-1">Laurence</p>
+			  <p className="col-span-1">Antonio</p>
             </div>
           </div>
 
