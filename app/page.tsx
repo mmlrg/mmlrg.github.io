@@ -29,23 +29,47 @@ export default function Home() {
   ));  
 
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex min-h-screen flex-col overflow-x-hidden">
 
-      <div className='flex flex-col items-center justify-center w-full h-screen bg-stone-900 text-center'>
-          <h1 className="font-bold text-white text-5xl px-3 sm:px-10 md:px-5">
-            McGill Machine Learning Reading Group
-          </h1>
-          <p className="text-lg text-white m-5 px-3 sm:px-10 md:px-5">
-            Weekly meetings to discuss recent research papers in machine learning.
-          </p>
-        
-          <Link href="https://discord.gg/cgWxx94WTg" rel="noopener noreferrer" target="_blank">
-            <Button color="primary" variant="shadow" className="flex items-center">
-              <RiDiscordFill className="text-3xl" /> 
-              <h5 className="text-bold">Join our Discord</h5>
-            </Button>
-          </Link>
+      <div className='relative flex flex-col items-center justify-center md:justify-start w-full h-screen bg-stone-900 text-center md:overflow-hidden'>
+          <Image
+            src="/images/group-photo.jpg"
+            alt="McGill Machine Learning Reading Group"
+            fill
+            className="hidden md:block object-cover"
+            priority
+          />
+          <div className="hidden md:block absolute top-0 left-0 right-0 h-[37%] bg-black/50" style={{maskImage: 'linear-gradient(to bottom, black 0%, black 67.57%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 67.57%, transparent 100%)'}}></div>
+          <div className="hidden md:block absolute bottom-0 left-0 right-0 h-[37%] bg-black/50" style={{maskImage: 'linear-gradient(to top, black 0%, black 67.57%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to top, black 0%, black 67.57%, transparent 100%)'}}></div>
+          <div className="hidden md:block absolute top-0 left-0 right-0 h-[37%] backdrop-blur-md" style={{maskImage: 'linear-gradient(to bottom, black 0%, black 67.57%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 67.57%, transparent 100%)'}}></div>
+          <div className="hidden md:block absolute bottom-0 left-0 right-0 h-[37%] backdrop-blur-md" style={{maskImage: 'linear-gradient(to top, black 0%, black 67.57%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to top, black 0%, black 67.57%, transparent 100%)'}}></div>
+          <div className="relative z-10 flex flex-col items-center md:mt-16 md:md:mt-20 w-full">
+            <h1 className="font-bold text-white text-4xl md:text-5xl px-3 sm:px-10 md:px-5">
+              McGill Machine Learning Reading Group
+            </h1>
 
+            <div className="md:hidden w-full px-6 my-6">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden">
+                <Image
+                  src="/images/group-photo.jpg"
+                  alt="McGill Machine Learning Reading Group"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+
+            <p className="text-lg text-white m-5 px-3 sm:px-10 md:px-5">
+              Weekly meetings to discuss recent research papers in machine learning.
+            </p>
+
+            <Link href="https://discord.gg/cgWxx94WTg" rel="noopener noreferrer" target="_blank">
+              <Button color="primary" variant="shadow" className="flex items-center">
+                <RiDiscordFill className="text-3xl" />
+                <h5 className="text-bold">Join our Discord</h5>
+              </Button>
+            </Link>
+          </div>
       </div>
 
       <div className='flex flex-col items-center mt-5 mb-5 bg-white'>
@@ -74,9 +98,9 @@ export default function Home() {
 
           <div className='mt-10 mb-5'>
 
-          <div className='flex items-start justify-between mb-4'>
+          <div className='flex flex-col md:flex-row md:items-start md:justify-between mb-4'>
 
-          <h2 className="flex font-bold text-3xl">
+          <h2 className="flex font-bold text-3xl mb-2 md:mb-0">
             <RiPresentationLine className="mr-2 text-purple-500"/>
             Recent Presentations
           </h2>
@@ -122,16 +146,16 @@ export default function Home() {
           </div>
 
           <div className='mt-10 mb-5'>
-          
-          <div className='flex items-start justify-between mb-4'> 
 
-          <h2 className="flex font-bold text-3xl">
+          <div className='flex flex-col md:flex-row md:items-start md:justify-between mb-4'>
+
+          <h2 className="flex font-bold text-3xl mb-2 md:mb-0">
             <RiBookOpenLine className="mr-2 text-blue-500"/>
             Latest Posts
-          </h2> 
+          </h2>
 
           <Link href="/blog">
-            <div className="flex items-center underline text-lg"> 
+            <div className="flex items-center underline text-lg">
               <p>View all posts</p>
               <IoIosArrowRoundForward className="ml-1 text-2xl"/>
             </div>
@@ -139,7 +163,7 @@ export default function Home() {
 
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 text-lg">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 text-lg">
             {postPreviews}
           </div>
 
@@ -158,9 +182,6 @@ export default function Home() {
           </div>
           
         </div>
-      </div>
-
-      <div className='bg-stone-900 text-white w-full h-12 md:h-16'>
       </div>
 
     </main>
