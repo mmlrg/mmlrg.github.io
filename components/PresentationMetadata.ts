@@ -3,4 +3,6 @@ export interface PresentationMetadata {
     presenter: string;
     affiliation: string;
     date: string;
+    paper?: string;
+    guestPresenter?: boolean;
 }

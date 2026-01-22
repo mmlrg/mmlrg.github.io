@@ -1,5 +1,13 @@
 [
 	{
+		"title": "Q&A on Steering LLMs in Sparse Spaces",
+		"presenter": "Reza Bayat",
+		"affiliation": "Mila",
+		"date": "2026-01-21",
+		"paper": "https://arxiv.org/abs/2503.00177",
+		"guestPresenter": true
+	},
+	{
 		"title": "World Models",
 		"presenter": "Dani",
 		"affiliation": "Université de Montréal",
@@ -27,13 +35,15 @@
 		"title": "Diffusion and Flow Matching",
 		"presenter": "Mark Chiu",
 		"affiliation": "University of Waterloo",
-		"date": "2025-10-20"
+		"date": "2025-10-20",
+		"guestPresenter": true
 	},
 	{
 		"title": "Affective Social Robots, Emotions and Gamification",
 		"presenter": "Professor Hatice Kose",
 		"affiliation": "Istanbul Technical University",
-		"date": "2025-10-06"
+		"date": "2025-10-06",
+		"guestPresenter": true
 	},
 	{
 		"title": "Simultaneous Localization and Mapping (SLAM)",
@@ -45,7 +55,8 @@
 		"title": "SciGym: Measuring Scientific Capabilities of Language Models with a Systems Biology Dry Lab",
 		"presenter": "Stephen Lu",
 		"affiliation": "UC Berkeley",
-		"date": "2025-09-24"
+		"date": "2025-09-24",
+		"guestPresenter": true
 	},
 	{
 		"title": "A Neuromotor Interface for Human Computer Interatction",
@@ -81,13 +92,15 @@
 		"title": "MedRAX: Medical Reasoning Agent for Chest X-Ray",
 		"presenter": "Adibvafa Fallahpour",
 		"affiliation": "University of Toronto",
-		"date": "2025-02-25"
+		"date": "2025-02-25",
+		"guestPresenter": true
 	},
 	{
 		"title": "Codon Transformer",
 		"presenter": "Adibvafa Fallahpour",
 		"affiliation": "University of Toronto",
-		"date": "2025-02-25"
+		"date": "2025-02-25",
+		"guestPresenter": true
 	},
 	{
 		"title": "Backpropagation",

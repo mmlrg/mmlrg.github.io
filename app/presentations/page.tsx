@@ -38,9 +38,28 @@ function Presentations() {
                 {groupedPresentations[season].map((pres, index) => (
                     <div key={index} className="border-l-4 border-purple-500 pl-4 py-2">
                         <p className="text-purple-500 text-2xl font-bold mb-1">{pres.title}</p>
+                        {pres.guestPresenter ? (
+                            <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-2 py-1 rounded inline-block mb-2">
+                                Guest Presenter
+                            </span>
+                        ) : (
+                            <span className="bg-slate-100 text-slate-700 text-xs font-semibold px-2 py-1 rounded inline-block mb-2">
+                                Reading Group Discussion
+                            </span>
+                        )}
                         <p className="text-slate-700 text-lg font-semibold">{pres.presenter}</p>
                         <p className="text-slate-600 text-sm">{pres.affiliation}</p>
                         <p className="text-slate-500 text-sm mt-1">{pres.date}</p>
+                        {pres.paper && (
+                            <a
+                                href={pres.paper}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-purple-500 hover:text-purple-700 text-sm mt-1 inline-block hover:underline"
+                            >
+                                📄 View Paper
+                            </a>
+                        )}
                     </div>
                 ))}
             </div>
