@@ -63,7 +63,7 @@ export default function Home() {
               Weekly meetings to discuss recent research papers in machine learning.
             </p>
 
-            <Link href="https://discord.gg/cgWxx94WTg" rel="noopener noreferrer" target="_blank">
+            <Link href="https://discord.gg/hK72etGV" rel="noopener noreferrer" target="_blank">
               <Button color="primary" variant="shadow" className="flex items-center">
                 <RiDiscordFill className="text-3xl" />
                 <h5 className="text-bold">Join our Discord</h5>
